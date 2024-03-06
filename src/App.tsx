@@ -1,14 +1,12 @@
 import * as React from 'react';
 
+
 export default class App extends React.Component {
-  public render() {
+  render() {
     return (
       <div>
-        <h1>meet landing page</h1> 
+        <h1>Hello meet-lnading-page</h1>       
       </div>
     );
   }
 }
-
-
-
