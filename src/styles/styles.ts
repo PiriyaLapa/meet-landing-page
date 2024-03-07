@@ -23,6 +23,6 @@ export const StyledButton = styled.button<StyledBtnProp>`
     font-weight: 600;
     font-size: 16px;
     line-height: 26px;
-    color: #8fe3f9;
+    color: ${(props) => (props.btnType === "Primary" ? "#8fe3f9" : "#D9B8FF")};
   }
 `;

@@ -9,6 +9,7 @@ export default class App extends React.Component {
        <GlobalStyles /> 
         <h1>Hello meet-lnading-page</h1>       
         <Button  btnType='Primary'/>
+        <Button  btnType='Secondary'/>
       </div>
     );
   }
