@@ -17,6 +17,7 @@ export const StyledButton = styled.button<StyledBtnProp>`
   font-weight: 900;
   font-size: 16px;
   line-height: 26px;
+  letter-spacing:0.2px;
   span {
     font-family: "Red Hat Display";
     font-style: normal;
