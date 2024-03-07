@@ -26,13 +26,14 @@ const GlobalStyles = createGlobalStyle<{}>`
         // Labtop
         @media screen and (min-width:1024px) and (max-width:1439px){
              background-color:#93BFCF;
-            /* padding: 5% 5%; */
         }
 
         // Desktop
         @media screen and (min-width:1440px){
              background-color:#6096B4;
-            /* padding:5% 5%; */
+        }
+        @media screen and (min-width:1920px){
+             background-color:#CADEFC;
         }
     }
 `;
