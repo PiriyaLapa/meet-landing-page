@@ -20,7 +20,7 @@ export const StyledButton = styled.button<StyledBtnProp>`
   span {
     font-family: "Red Hat Display";
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 16px;
     line-height: 26px;
     color: ${(props) => (props.btnType === "Primary" ? "#8fe3f9" : "#D9B8FF")};
