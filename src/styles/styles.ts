@@ -17,7 +17,7 @@ export const StyledButton = styled.button<StyledBtnProp>`
   font-weight: 900;
   font-size: 16px;
   line-height: 26px;
-  letter-spacing:0.2px;
+  letter-spacing: 0.2px;
   span {
     font-family: "Red Hat Display";
     font-style: normal;
@@ -26,4 +26,13 @@ export const StyledButton = styled.button<StyledBtnProp>`
     line-height: 26px;
     color: ${(props) => (props.btnType === "Primary" ? "#8fe3f9" : "#D9B8FF")};
   }
+`;
+
+//  Styled Detect screen size fucntion
+export const StyledScreenSizeDetect = styled.div`
+  width: auto;
+  height: auto;
+  display:inline-block;
+  background-color: rgba(143,227,249, 0.2);
+  padding:2%;
 `;
