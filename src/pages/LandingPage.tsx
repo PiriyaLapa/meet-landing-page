@@ -1,5 +1,6 @@
 import { Component, ReactNode } from "react";
 import { StyledScreenSizeDetect } from "../styles/styles";
+import detectScreenSize from "../helpers/screenSizeHelper";
 
 export default class LandingPage extends Component {
   // Define initial state to hold window dimensions
@@ -27,15 +28,8 @@ export default class LandingPage extends Component {
   }
   render(): ReactNode {
     const { windowWidth, windowHeight } = this.state;
+    const screenNow = detectScreenSize(windowWidth);
 
-    let screenNow =
-      windowWidth <= 767
-        ? "Mobile"
-        : windowWidth <= 1023
-        ? "Tablet"
-        : windowWidth <= 1439
-        ? "Laptop"
-        : "Desktop";
     return (
       <div>
         <h1>Landing Page</h1>
