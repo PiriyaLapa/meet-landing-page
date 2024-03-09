@@ -23,7 +23,7 @@ interface LandingPageData {
 }
 
 // Define the landing page data
-const dataLandingPage: LandingPageData = {
+export const dataLandingPage: LandingPageData = {
   header: {
     title: "Your Title Here",
     content: "Your Content Here",
@@ -39,9 +39,36 @@ const dataLandingPage: LandingPageData = {
         "image-woman-in-videocall.jpg"
       ),
     },
-    { id: 2, urlImg: "URL_FOR_PIC_2" },
-    { id: 3, urlImg: "URL_FOR_PIC_3" },
-    { id: 4, urlImg: "URL_FOR_PIC_4" },
+    {
+      id: 2,
+      urlImg: path.join(
+        __dirname,
+        "src",
+        "assets",
+        "desktop",
+        "image-man-texting.jpg"
+      ),
+    },
+    {
+      id: 3,
+      urlImg: path.join(
+        __dirname,
+        "src",
+        "assets",
+        "desktop",
+        "image-men-in-meeting.jpg"
+      ),
+    },
+    {
+      id: 4,
+      urlImg: path.join(
+        __dirname,
+        "src",
+        "assets",
+        "desktop",
+        "image-women-videochatting.jpg"
+      ),
+    },
   ],
   galleryCard: {
     smallTitle: "Gallery Card Small Title",
