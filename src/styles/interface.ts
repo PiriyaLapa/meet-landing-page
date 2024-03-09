@@ -1,8 +1,8 @@
 // BtnProp
 export interface BtnProp{
-    btnType?:"Primary" | "Secondary"; 
+    btntype?:"Primary" | "Secondary"; 
 }
 
 export interface StyledBtnProp{
-    btnType?:string; 
+    btntype?:string; 
 }

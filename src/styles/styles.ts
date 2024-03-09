@@ -5,12 +5,11 @@ import { StyledBtnProp } from "./interface";
 export const StyledButton = styled.button<StyledBtnProp>`
   border-radius: 29px;
   background-color: ${(props) =>
-    props.btnType === "Primary" ? "#4D96A9" : "#855FB1"};
+    props.btntype === "Primary" ? "#4D96A9" : "#855FB1"};
   color: #ffff;
   border: none;
-  height: 26px;
+  height: 58px; /* Changed from 26px to 58px */
   width: 193px;
-  height: 58px;
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 900;
@@ -24,8 +23,24 @@ export const StyledButton = styled.button<StyledBtnProp>`
     font-weight: 800;
     font-size: 16px;
     line-height: 26px;
-    color: ${(props) => (props.btnType === "Primary" ? "#8fe3f9" : "#D9B8FF")};
+    color: ${(props) => (props.btntype === "Primary" ? "#8fe3f9" : "#D9B8FF")};
   }
+`;
+export const StyledButtonWhat = styled.button<StyledBtnProp>`
+  border-radius: 29px;
+  background-color: #855FB1;
+  color: #ffff;
+  border: none;
+  height: 26px;
+  width: 139px;
+  height: 58px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  margin:auto;
 `;
 
 //  Styled Detect screen size fucntion
@@ -44,7 +59,7 @@ export const StyledScreenSizeDetect = styled.div`
 // Styled LandingPage
 export const StyledLandingPage = styled.div`
   display: grid;
-  overflow:hidden;
+  overflow: hidden;
   grid-template-rows: auto 1fr 1fr auto;
   min-height: 100vh;
 `;
@@ -98,12 +113,11 @@ export const StyledNavbar = styled.nav`
 // components
 
 export const StyledImg = styled.img`
-
   @media screen and (max-width: 767px) {
-    width:102%;
+    width: 102%;
     margin: 7% auto;
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
   }
 
   // Tablet
@@ -124,5 +138,4 @@ export const StyledImg = styled.img`
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
   }
-  
 `;
