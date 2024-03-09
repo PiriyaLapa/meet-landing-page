@@ -44,6 +44,7 @@ export const StyledScreenSizeDetect = styled.div`
 // Styled LandingPage
 export const StyledLandingPage = styled.div`
   display: grid;
+  overflow:hidden;
   grid-template-rows: auto 1fr 1fr auto;
   min-height: 100vh;
 `;
@@ -91,7 +92,7 @@ export const StyledAuthor = styled.footer`
 
 export const StyledNavbar = styled.nav`
   padding: 3%;
-  margin: auto;
+  margin: 3% auto;
 `;
 
 // components
@@ -99,8 +100,8 @@ export const StyledNavbar = styled.nav`
 export const StyledImg = styled.img`
 
   @media screen and (max-width: 767px) {
-    width:80%;
-    margin:auto;
+    width:102%;
+    margin: 7% auto;
     display:flex;
     justify-content:center;
   }
