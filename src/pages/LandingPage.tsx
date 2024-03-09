@@ -4,6 +4,7 @@ import detectScreenSize from "../helpers/screenSizeHelper";
 import Header from "./sections/Header";
 import Gallery from "./sections/Gallery";
 import Footer from "./sections/Footer";
+import Navbar from "../navbar/Navbar";
 
 export default class LandingPage extends Component {
   // Define initial state to hold window dimensions
@@ -35,6 +36,7 @@ export default class LandingPage extends Component {
 
     return (
       <StyledLandingPage>
+        <Navbar />
         <Header />
         <Gallery />
         <Footer/>

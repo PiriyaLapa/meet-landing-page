@@ -9,7 +9,6 @@ export const StyledButton = styled.button<StyledBtnProp>`
   color: #ffff;
   border: none;
   height: 26px;
-
   width: 193px;
   height: 58px;
   font-family: "Red Hat Display";
@@ -44,7 +43,8 @@ export const StyledScreenSizeDetect = styled.div`
 // Styled LandingPage
 export const StyledLandingPage = styled.div`
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+  grid-template-rows:auto 1fr 1fr auto;
   min-height: 100vh;
 `;
 
@@ -55,7 +55,7 @@ export const StyledHeader = styled.header`
 
 export const StyledGallery = styled.main`
   padding: 5%;
-  background-color: #C5EBAA;
+  background-color: #c5ebaa;
 `;
 
 export const StyledFooter = styled.footer`
@@ -65,6 +65,10 @@ export const StyledFooter = styled.footer`
 
 export const StyledAuthor = styled.footer`
   * {
-    maring-right: 2%;
+    margin-right: 2%;
   }
+`;
+
+export const StyledNavbar = styled.nav`
+  padding: 5%;
 `;
