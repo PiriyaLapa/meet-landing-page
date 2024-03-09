@@ -16,6 +16,7 @@ export const StyledButton = styled.button<StyledBtnProp>`
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.2px;
+  margin: 2% 0%;
 
   span {
     font-family: "Red Hat Display";
@@ -25,10 +26,32 @@ export const StyledButton = styled.button<StyledBtnProp>`
     line-height: 26px;
     color: ${(props) => (props.btntype === "Primary" ? "#8fe3f9" : "#D9B8FF")};
   }
+
+  @media screen and (max-width: 767px) {
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //  background-color:#BDCDD6;
+    /* padding: 3% 5%; */
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //  background-color:#93BFCF;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //  background-color:#6096B4;
+  }
+  @media screen and (min-width: 1920px) {
+    //  background-color:#CADEFC;
+  }
 `;
 export const StyledButtonWhat = styled.button<StyledBtnProp>`
   border-radius: 29px;
-  background-color: #855FB1;
+  background-color: #855fb1;
   color: #ffff;
   border: none;
   height: 26px;
@@ -40,7 +63,7 @@ export const StyledButtonWhat = styled.button<StyledBtnProp>`
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.2px;
-  margin:auto;
+  margin: 3% auto;
 `;
 
 //  Styled Detect screen size fucntion
@@ -66,7 +89,7 @@ export const StyledLandingPage = styled.div`
 
 export const StyledHeader = styled.header`
   @media screen and (max-width: 767px) {
-    // background-color:#EEE9DA;
+    text-align: center;
   }
 
   // Tablet
@@ -138,4 +161,27 @@ export const StyledImg = styled.img`
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
   }
+`;
+
+// Card component
+
+export const StyledCard = styled.div`
+  padding: 5%;
+`;
+
+export const Title = styled.span`
+  font-family: "Red Hat Disply";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  color: #28283d;
+`;
+
+export const Content = styled(Title)`
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #87879d;
 `;
