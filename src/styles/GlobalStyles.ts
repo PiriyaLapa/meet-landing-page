@@ -14,7 +14,6 @@ const GlobalStyles = createGlobalStyle<{}>`
         height:100vh;
         @media screen and (max-width:767px){
             // background-color:#EEE9DA;
-
         }
 
         // Tablet
