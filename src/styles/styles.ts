@@ -32,7 +32,39 @@ export const StyledButton = styled.button<StyledBtnProp>`
 export const StyledScreenSizeDetect = styled.div`
   width: auto;
   height: auto;
-  display:inline-block;
-  background-color: rgba(143,227,249, 0.2);
-  padding:2%;
+  display: inline-block;
+  background-color: rgba(143, 227, 249, 0.2);
+  padding: 2%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+// Styled LandingPage
+export const StyledLandingPage = styled.div`
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  min-height: 100vh;
+`;
+
+export const StyledHeader = styled.header`
+  padding: 5%;
+  background-color: #eee9da;
+`;
+
+export const StyledGallery = styled.main`
+  padding: 5%;
+  background-color: #C5EBAA;
+`;
+
+export const StyledFooter = styled.footer`
+  padding: 5%;
+  background-color: #93bfcf;
+`;
+
+export const StyledAuthor = styled.footer`
+  * {
+    maring-right: 2%;
+  }
 `;

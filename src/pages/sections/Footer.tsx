@@ -1,9 +1,8 @@
-import {Component,ReactNode} from 'react';
+import { Component, ReactNode } from "react";
+import { StyledFooter } from "../../styles/styles";
 
-export default class Footer extends Component{
-    render():ReactNode{
-        return(
-            <h1>Footer section</h1>
-        )
-    }
+export default class Footer extends Component {
+  render(): ReactNode {
+    return <StyledFooter>Footer section</StyledFooter>;
+  }
 }

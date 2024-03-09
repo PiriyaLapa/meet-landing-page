@@ -1,6 +1,9 @@
 import { Component, ReactNode } from "react";
-import { StyledScreenSizeDetect } from "../styles/styles";
+import { StyledLandingPage, StyledScreenSizeDetect } from "../styles/styles";
 import detectScreenSize from "../helpers/screenSizeHelper";
+import Header from "./sections/Header";
+import Gallery from "./sections/Gallery";
+import Footer from "./sections/Footer";
 
 export default class LandingPage extends Component {
   // Define initial state to hold window dimensions
@@ -31,14 +34,16 @@ export default class LandingPage extends Component {
     const screenNow = detectScreenSize(windowWidth);
 
     return (
-      <div>
-        <h1>Landing Page</h1>
+      <StyledLandingPage>
+        <Header />
+        <Gallery />
+        <Footer/>
         <StyledScreenSizeDetect>
           <h1>Now device for : {screenNow}</h1>
           <h1>Width of screen: {windowWidth}</h1>
           <h1>Height of screen: {windowHeight}</h1>
         </StyledScreenSizeDetect>
-      </div>
+      </StyledLandingPage>
     );
   }
 }

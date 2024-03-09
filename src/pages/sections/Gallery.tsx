@@ -1,9 +1,10 @@
 import { Component, ReactNode } from "react";
+import { StyledGallery } from "../../styles/styles";
 
 export default class Gallery extends Component{
     render():ReactNode{
         return(
-            <h1>Gallery section</h1>
+            <StyledGallery>Gallery section</StyledGallery>
         )
     }
 }
