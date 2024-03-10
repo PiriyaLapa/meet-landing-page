@@ -7,8 +7,10 @@ import Button from "../../components/buttons/Button";
 import { dataLandingPage } from "../../apis/Apis";
 
 export default class Header extends Component {
-  renderGalleryPictures(): ReactNode{
-    return dataLandingPage.galleryPic.map((picture) => (<Image key={picture.id} urlImg={picture.urlImg} />))
+  renderGalleryPictures(): ReactNode {
+    return dataLandingPage.galleryPic.map((picture) => (
+      <Image key={picture.id} urlImg={picture.urlImg} />
+    ));
   }
   render(): ReactNode {
     return (
@@ -16,7 +18,7 @@ export default class Header extends Component {
         <Image urlImg={urlImg} />
         <Button btntype="Primary" />
         <ButtonWhat />
-     {this.renderGalleryPictures()} 
+        {this.renderGalleryPictures()}
       </StyledHeader>
     );
   }
