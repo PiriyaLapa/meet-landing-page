@@ -166,11 +166,11 @@ export const StyledImg = styled.img`
 
 // Card component
 
-export const StyledCard = styled.div`
+export const StyledCardHeader = styled.div`
   padding: 5%;
 `;
 
-export const Title = styled.span`
+export const TitleHeader = styled.span`
   font-family: "Red Hat Disply";
   font-style: normal;
   font-weight: 900;
@@ -180,7 +180,7 @@ export const Title = styled.span`
   color: #28283d;
 `;
 
-export const Content = styled(Title)`
+export const ContentHeader = styled(TitleHeader)`
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;

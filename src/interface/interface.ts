@@ -5,7 +5,6 @@ export interface StyledBtnProp {
 export interface BtnDownloadProps {
   type: string;
 }
-
 // apis interface
 export interface GalleryPicture {
   id: number;
