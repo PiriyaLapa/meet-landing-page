@@ -28,8 +28,9 @@ interface LandingPageData {
 // Define the landing page data
 export const dataLandingPage: LandingPageData = {
   header: {
-    title: "Your Title Here",
-    content: "Your Content Here",
+    title: "group chat for everyone",
+    content:
+      "Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.",
   },
   galleryPic: [
     {
@@ -50,12 +51,14 @@ export const dataLandingPage: LandingPageData = {
     },
   ],
   galleryCard: {
-    smallTitle: "Gallery Card Small Title",
-    Title: "Gallery Card Title",
-    content: "Gallery Card Content",
+    smallTitle: "Built for modern use",
+    Title: "Smarter meetings, all in one place",
+    content:
+      "Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.",
   },
   footer: {
-    title: "Footer Title",
-    content: "Footer Content",
+    title: "Experience more together",
+    content:
+      "Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.",
   },
 };
