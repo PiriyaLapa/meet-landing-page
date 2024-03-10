@@ -2,28 +2,7 @@ import urlImg1 from "../assets/desktop/image-man-texting.jpg";
 import urlImg2 from "../assets/desktop/image-men-in-meeting.jpg";
 import urlImg3 from "../assets/desktop/image-woman-in-videocall.jpg";
 import urlImg4 from "../assets/desktop/image-women-videochatting.jpg";
-
-interface GalleryPicture {
-  id: number;
-  urlImg: string;
-}
-
-interface LandingPageData {
-  header: {
-    title: string;
-    content: string;
-  };
-  galleryPic: GalleryPicture[];
-  galleryCard: {
-    smallTitle: string;
-    Title: string;
-    content: string;
-  };
-  footer: {
-    title: string;
-    content: string;
-  };
-}
+import { LandingPageData } from "../interface/interface";
 
 // Define the landing page data
 export const dataLandingPage: LandingPageData = {

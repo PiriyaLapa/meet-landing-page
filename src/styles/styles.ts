@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { StyledBtnProp } from "./interface";
-import { BtnDownloadProps } from "./interface";
+import { StyledBtnProp } from "../interface/interface";
+import { BtnDownloadProps } from "../interface/interface";
 
 // Button
 export const StyledButtonWhat = styled.button<StyledBtnProp>`
@@ -84,7 +84,7 @@ export const StyledScreenSizeDetect = styled.div`
 export const StyledLandingPage = styled.div`
   display: grid;
   overflow: hidden;
-  grid-template-rows: auto 1fr 1fr auto;
+  grid-template-rows: auto auto auto auto;
   min-height: 100vh;
 `;
 
