@@ -1,13 +1,12 @@
-import * as React from 'react';
-import { Content, StyledCard, Title } from '../styles/styles';
+import * as React from "react";
+import { Content, StyledCard, Title } from "../styles/styles";
 
-
-export default class App extends React.Component {
-  public render():React.ReactNode {
+export default class Card extends React.Component {
+  public render(): React.ReactNode {
     return (
       <StyledCard>
-            <Title>test</Title>
-      <Content>test</Content>
+        <Title>test</Title>
+        <Content>test</Content>
       </StyledCard>
     );
   }

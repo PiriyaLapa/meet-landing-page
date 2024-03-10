@@ -1,4 +1,7 @@
-import path from "path";
+import urlImg1 from "../assets/desktop/image-man-texting.jpg";
+import urlImg2 from "../assets/desktop/image-men-in-meeting.jpg";
+import urlImg3 from "../assets/desktop/image-woman-in-videocall.jpg";
+import urlImg4 from "../assets/desktop/image-women-videochatting.jpg";
 
 interface GalleryPicture {
   id: number;
@@ -31,43 +34,19 @@ export const dataLandingPage: LandingPageData = {
   galleryPic: [
     {
       id: 1,
-      urlImg: path.join(
-        __dirname,
-        "src",
-        "assets",
-        "desktop",
-        "image-woman-in-videocall.jpg"
-      ),
+      urlImg: urlImg1,
     },
     {
       id: 2,
-      urlImg: path.join(
-        __dirname,
-        "src",
-        "assets",
-        "desktop",
-        "image-man-texting.jpg"
-      ),
+      urlImg: urlImg2,
     },
     {
       id: 3,
-      urlImg: path.join(
-        __dirname,
-        "src",
-        "assets",
-        "desktop",
-        "image-men-in-meeting.jpg"
-      ),
+      urlImg: urlImg3,
     },
     {
       id: 4,
-      urlImg: path.join(
-        __dirname,
-        "src",
-        "assets",
-        "desktop",
-        "image-women-videochatting.jpg"
-      ),
+      urlImg: urlImg4,
     },
   ],
   galleryCard: {
