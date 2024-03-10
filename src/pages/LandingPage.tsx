@@ -5,6 +5,7 @@ import Header from "./sections/Header";
 import Gallery from "./sections/Gallery";
 import Footer from "./sections/Footer";
 import Navbar from "../navbar/Navbar";
+import ScreenSizeDetect from "../components/ScreenSizeDetect";
 
 export default class LandingPage extends Component {
   // Define initial state to hold window dimensions
@@ -31,7 +32,7 @@ export default class LandingPage extends Component {
     window.removeEventListener("resize", this.updateWindowDimensions);
   }
   render(): ReactNode {
-    const { windowWidth, windowHeight } = this.state;
+    const { windowWidth  } = this.state;
     const screenNow = detectScreenSize(windowWidth);
 
     return (
@@ -40,11 +41,7 @@ export default class LandingPage extends Component {
         <Header />
         <Gallery />
         <Footer/>
-        <StyledScreenSizeDetect>
-          <h1>Now device for : {screenNow}</h1>
-          <h1>Width of screen: {windowWidth}</h1>
-          <h1>Height of screen: {windowHeight}</h1>
-        </StyledScreenSizeDetect>
+        <ScreenSizeDetect screenNow={screenNow} {...this.state} /> 
       </StyledLandingPage>
     );
   }

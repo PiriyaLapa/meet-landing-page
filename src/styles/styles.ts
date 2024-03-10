@@ -69,7 +69,8 @@ export const StyledBtnDownload = styled.button<BtnDownloadProps>`
 
 //  Styled Detect screen size fucntion
 export const StyledScreenSizeDetect = styled.div`
-  width: auto;
+  // width: auto;
+  width:90%;
   height: auto;
   display: inline-block;
   background-color: rgba(143, 227, 249, 0.2);
@@ -77,7 +78,17 @@ export const StyledScreenSizeDetect = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 100%);
+  h1 {
+    font-family: "Ret Hat Display", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 24px;
+    span{
+      color:yellow;
+    }
+  }
 `;
 
 // Styled LandingPage
@@ -165,19 +176,20 @@ export const StyledImg = styled.img`
 `;
 
 // Card component
-
 export const StyledCardHeader = styled.div`
   padding: 5%;
 `;
 
 export const TitleHeader = styled.span`
-  font-family: "Red Hat Disply";
+  font-family: "Red Hat Disply", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
   line-height: 44px;
   text-align: center;
+  text-transform: capitalize;
   color: #28283d;
+  display: block;
 `;
 
 export const ContentHeader = styled(TitleHeader)`

@@ -32,3 +32,10 @@ export interface LandingPageData {
 export interface ImgProps {
   urlImg: string;
 }
+
+// ScreenSizeDetectProps
+export interface ScreenSizeDetectProps {
+  screenNow: string;
+  windowWidth: number;
+  windowHeight: number;
+}

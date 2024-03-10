@@ -1,12 +1,19 @@
 import * as React from "react";
 import { ContentHeader, StyledCardHeader, TitleHeader } from "../styles/styles";
+import ButtonDownload from "../components/buttons/ButtonDownload";
+import ButtonWhat from "../components/buttons/ButtonWhat";
+import { dataLandingPage } from "../apis/Apis";
 
 export default class CardHeader extends React.Component {
   public render(): React.ReactNode {
+    const title = dataLandingPage.header.title;
+    const content = dataLandingPage.header.content;
     return (
       <StyledCardHeader>
-        <TitleHeader>test</TitleHeader>
-        <ContentHeader>test</ContentHeader>
+        <TitleHeader>{title}</TitleHeader>
+        <ContentHeader>{content}</ContentHeader>
+        <ButtonDownload btnType="Primary" />
+        <ButtonWhat />
       </StyledCardHeader>
     );
   }
