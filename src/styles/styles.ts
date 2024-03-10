@@ -177,7 +177,7 @@ export const StyledImg = styled.img`
 
 // Card component
 export const StyledCardHeader = styled.div`
-  padding: 5%;
+  padding: 8%;
 `;
 
 export const TitleHeader = styled.span`
