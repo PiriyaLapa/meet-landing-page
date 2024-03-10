@@ -1,11 +1,29 @@
 import styled from "styled-components";
 import { StyledBtnProp } from "./interface";
+import { BtnDownloadProps } from "./interface";
 
 // Button
-export const StyledButton = styled.button<StyledBtnProp>`
+export const StyledButtonWhat = styled.button<StyledBtnProp>`
+  border-radius: 29px;
+  background-color: #855fb1;
+  color: #ffff;
+  border: none;
+  height: 26px;
+  width: 139px;
+  height: 58px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  margin: 3% auto;
+`;
+
+export const StyledBtnDownload = styled.button<BtnDownloadProps>`
   border-radius: 29px;
   background-color: ${(props) =>
-    props.btntype === "Primary" ? "#4D96A9" : "#855FB1"};
+    props.type === "Primary" ? "#4D96A9" : "#855FB1"};
   color: #ffff;
   border: none;
   height: 58px; /* Changed from 26px to 58px */
@@ -17,14 +35,13 @@ export const StyledButton = styled.button<StyledBtnProp>`
   line-height: 26px;
   letter-spacing: 0.2px;
   margin: 2% 0%;
-
   span {
     font-family: "Red Hat Display";
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
     line-height: 26px;
-    color: ${(props) => (props.btntype === "Primary" ? "#8fe3f9" : "#D9B8FF")};
+    color: ${(props) => (props.type === "Primary" ? "#8fe3f9" : "#D9B8FF")};
   }
 
   @media screen and (max-width: 767px) {
@@ -48,22 +65,6 @@ export const StyledButton = styled.button<StyledBtnProp>`
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
   }
-`;
-export const StyledButtonWhat = styled.button<StyledBtnProp>`
-  border-radius: 29px;
-  background-color: #855fb1;
-  color: #ffff;
-  border: none;
-  height: 26px;
-  width: 139px;
-  height: 58px;
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.2px;
-  margin: 3% auto;
 `;
 
 //  Styled Detect screen size fucntion

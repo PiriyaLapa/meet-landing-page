@@ -1,8 +1,7 @@
 // BtnProp
-export interface BtnProp{
-    btntype?:"Primary" | "Secondary"; 
-}
-
 export interface StyledBtnProp{
     btntype?:string; 
+}
+export interface BtnDownloadProps {
+  type: string;
 }

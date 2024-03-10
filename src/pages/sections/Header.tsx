@@ -3,8 +3,8 @@ import { StyledHeader } from "../../styles/styles";
 import Image from "../../components/image/Image";
 import urlImg from "../../assets/tablet/image-hero.webp";
 import ButtonWhat from "../../components/buttons/ButtonWhat";
-import Button from "../../components/buttons/Button";
 import { dataLandingPage } from "../../apis/Apis";
+import ButtonDownload from "../../components/buttons/ButtonDownload";
 
 export default class Header extends Component {
   renderGalleryPictures(): ReactNode {
@@ -16,7 +16,7 @@ export default class Header extends Component {
     return (
       <StyledHeader>
         <Image urlImg={urlImg} />
-        <Button btntype="Primary" />
+        <ButtonDownload btnType="Primary" />
         <ButtonWhat />
         {this.renderGalleryPictures()}
       </StyledHeader>
