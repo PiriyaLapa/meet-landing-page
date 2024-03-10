@@ -1,5 +1,5 @@
 import { Component, ReactNode } from "react";
-import { StyledLandingPage, StyledScreenSizeDetect } from "../styles/styles";
+import { StyledLandingPage} from "../styles/styles";
 import detectScreenSize from "../helpers/screenSizeHelper";
 import Header from "./sections/Header";
 import Gallery from "./sections/Gallery";

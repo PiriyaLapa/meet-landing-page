@@ -59,7 +59,7 @@ export const StyledBtnDownload = styled.button<BtnDownloadProps>`
   }
 
   // Desktop
-  @media screen and (min-width: 1440px) {
+ @media screen and (min-width: 1440px) {
     //  background-color:#6096B4;
   }
   @media screen and (min-width: 1920px) {
