@@ -2,7 +2,7 @@ import { Component, ReactNode } from "react";
 import { StyledHeader } from "../../styles/styles";
 import Image from "../../components/image/Image";
 import urlImg from "../../assets/tablet/image-hero.webp";
-import CardHeader from "../../cards/CardHeader";
+import CardHeader from "../../components/cards/CardHeader";
 
 export default class Header extends Component {
   render(): ReactNode {
