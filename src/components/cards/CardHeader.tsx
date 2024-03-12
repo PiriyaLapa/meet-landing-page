@@ -3,6 +3,7 @@ import { ContentHeader,StyledCardHeader,TitleHeader } from "../../styles/styles"
 import ButtonDownload from "../buttons/ButtonDownload";
 import ButtonWhat from "../buttons/ButtonWhat";
 import { dataLandingPage } from "../../apis/Apis";
+import Vector1 from "../vectors/Vector1";
 
 export default class CardHeader extends React.Component {
   public render(): React.ReactNode {
@@ -14,6 +15,7 @@ export default class CardHeader extends React.Component {
         <ContentHeader>{content}</ContentHeader>
         <ButtonDownload btnType="Primary" />
         <ButtonWhat />
+        <Vector1 />
       </StyledCardHeader>
     );
   }

@@ -5,7 +5,7 @@ import Header from "./sections/Header";
 import Gallery from "./sections/Gallery";
 import Footer from "./sections/Footer";
 import Navbar from "../navbar/Navbar";
-import ScreenSizeDetect from "../components/ScreenSizeDetect";
+// import ScreenSizeDetect from "../components/ScreenSizeDetect";
 
 export default class LandingPage extends Component {
   // Define initial state to hold window dimensions
@@ -33,7 +33,7 @@ export default class LandingPage extends Component {
   }
   render(): ReactNode {
     const { windowWidth  } = this.state;
-    const screenNow = detectScreenSize(windowWidth);
+    // const screenNow = detectScreenSize(windowWidth);
 
     return (
       <StyledLandingPage>
@@ -41,7 +41,7 @@ export default class LandingPage extends Component {
         <Header />
         <Gallery />
         <Footer/>
-        <ScreenSizeDetect screenNow={screenNow} {...this.state} /> 
+        {/* <ScreenSizeDetect screenNow={screenNow} {...this.state} />  */}
       </StyledLandingPage>
     );
   }
