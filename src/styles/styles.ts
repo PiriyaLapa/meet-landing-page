@@ -18,6 +18,29 @@ export const StyledButtonWhat = styled.button<StyledBtnProp>`
   line-height: 26px;
   letter-spacing: 0.2px;
   margin: 3% auto;
+  @media screen and (max-width: 767px) {
+    grid-area: D;
+    display: block;
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //  background-color:#BDCDD6;
+    /* padding: 3% 5%; */
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //  background-color:#93BFCF;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //  background-color:#6096B4;
+  }
+  @media screen and (min-width: 1920px) {
+    //  background-color:#CADEFC;
+  }
 `;
 
 export const StyledBtnDownload = styled.button<BtnDownloadProps>`
@@ -34,7 +57,6 @@ export const StyledBtnDownload = styled.button<BtnDownloadProps>`
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.2px;
-  margin: 2% 0%;
   span {
     font-family: "Red Hat Display";
     font-style: normal;
@@ -45,6 +67,9 @@ export const StyledBtnDownload = styled.button<BtnDownloadProps>`
   }
 
   @media screen and (max-width: 767px) {
+    grid-area: C;
+    display: block;
+    margin: 2% auto;
   }
 
   // Tablet
@@ -59,7 +84,7 @@ export const StyledBtnDownload = styled.button<BtnDownloadProps>`
   }
 
   // Desktop
- @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1440px) {
     //  background-color:#6096B4;
   }
   @media screen and (min-width: 1920px) {
@@ -70,7 +95,7 @@ export const StyledBtnDownload = styled.button<BtnDownloadProps>`
 //  Styled Detect screen size fucntion
 export const StyledScreenSizeDetect = styled.div`
   // width: auto;
-  width:90%;
+  width: 90%;
   height: auto;
   display: inline-block;
   background-color: rgba(143, 227, 249, 0.2);
@@ -85,8 +110,8 @@ export const StyledScreenSizeDetect = styled.div`
     font-weight: 900;
     text-transform: uppercase;
     font-size: 24px;
-    span{
-      color:yellow;
+    span {
+      color: yellow;
     }
   }
 `;
@@ -177,9 +202,12 @@ export const StyledImg = styled.img`
 
 // Card component
 export const StyledCardHeader = styled.div`
-  
   @media screen and (max-width: 767px) {
-    padding:5.8%;
+    grid-template-areas:
+      "A"
+      "B"
+      "C"
+      "D";
   }
 
   // Tablet
@@ -194,7 +222,7 @@ export const StyledCardHeader = styled.div`
   }
 
   // Desktop
- @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1440px) {
     //  background-color:#6096B4;
   }
   @media screen and (min-width: 1920px) {
@@ -212,14 +240,8 @@ export const TitleHeader = styled.span`
   text-transform: capitalize;
   color: #28283d;
   display: block;
-`;
-
-export const ContentHeader = styled(TitleHeader)`
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  color: #87879d;
   @media screen and (max-width: 767px) {
+    grid-area: A;
   }
 
   // Tablet
@@ -234,11 +256,39 @@ export const ContentHeader = styled(TitleHeader)`
   }
 
   // Desktop
- @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1440px) {
     //  background-color:#6096B4;
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
   }
-  
+`;
+
+export const ContentHeader = styled(TitleHeader)`
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #87879d;
+  @media screen and (max-width: 767px) {
+    grid-area: B;
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //  background-color:#BDCDD6;
+    /* padding: 3% 5%; */
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //  background-color:#93BFCF;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //  background-color:#6096B4;
+  }
+  @media screen and (min-width: 1920px) {
+    //  background-color:#CADEFC;
+  }
 `;
