@@ -69,7 +69,7 @@ export const StyledBtnDownload = styled.button<BtnDownloadProps>`
   @media screen and (max-width: 767px) {
     grid-area: C;
     display: block;
-    margin: 2% auto;
+    margin: 5% auto;
   }
 
   // Tablet
@@ -202,12 +202,9 @@ export const StyledImg = styled.img`
 
 // Card component
 export const StyledCardHeader = styled.div`
+  padding-top: 5%;
   @media screen and (max-width: 767px) {
-    grid-template-areas:
-      "A"
-      "B"
-      "C"
-      "D";
+    //
   }
 
   // Tablet
@@ -269,9 +266,10 @@ export const ContentHeader = styled(TitleHeader)`
   font-size: 16px;
   line-height: 26px;
   color: #87879d;
-  
+
   @media screen and (max-width: 767px) {
     grid-area: B;
+    padding: 8% 7%;
   }
 
   // Tablet
