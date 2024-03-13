@@ -290,4 +290,5 @@ export const ContentHeader = styled(TitleHeader)`
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
   }
+
 `;
