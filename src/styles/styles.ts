@@ -151,7 +151,7 @@ export const StyledHeader = styled.header`
 
 export const StyledGallery = styled.main`
   padding: 5%;
-  /* background-color: #c5ebaa; */
+  background-color: #c5ebaa; 
 `;
 
 export const StyledFooter = styled.footer`

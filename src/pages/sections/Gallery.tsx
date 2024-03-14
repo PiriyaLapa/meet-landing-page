@@ -10,9 +10,11 @@ export default class Gallery extends Component {
     ));
   }
   render(): ReactNode {
-    return <StyledGallery>
+    return (
+      <StyledGallery>
         Gallery section
         {this.renderGalleryPictures()}
-        </StyledGallery>;
+      </StyledGallery>
+    );
   }
 }
