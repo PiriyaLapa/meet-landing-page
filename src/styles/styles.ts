@@ -3,6 +3,35 @@ import { StyledBtnProp } from "../interface/interface";
 import { BtnDownloadProps } from "../interface/interface";
 
 // Button
+export const ContainerButton = styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 5%;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //
+  }
+  @media screen and (min-width: 1920px) {
+    //
+  }
+`;
 export const StyledButtonWhat = styled.button<StyledBtnProp>`
   border-radius: 29px;
   background-color: #855fb1;
@@ -17,10 +46,7 @@ export const StyledButtonWhat = styled.button<StyledBtnProp>`
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.2px;
-  margin: 3% auto;
   @media screen and (max-width: 767px) {
-    grid-area: D;
-    display: block;
   }
 
   // Tablet
@@ -67,9 +93,7 @@ export const StyledBtnDownload = styled.button<BtnDownloadProps>`
   }
 
   @media screen and (max-width: 767px) {
-    grid-area: C;
     display: block;
-    margin: 5% auto;
   }
 
   // Tablet
@@ -131,8 +155,7 @@ export const StyledHeader = styled.header`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    //  background-color:#BDCDD6;
-    /* padding: 3% 5%; */
+    background-color: #ffff;
   }
 
   // Labtop
@@ -296,7 +319,7 @@ export const ContentHeader = styled(TitleHeader)`
 // Vector
 
 export const StyledVector1 = styled.div`
-  text-align:center;
+  text-align: center;
 
   @media screen and (max-width: 767px) {
     //
