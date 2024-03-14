@@ -16,7 +16,8 @@ export const ContainerButton = styled.div`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    //
+    justify-content:center; 
+    gap:20px;
   }
 
   // Labtop
@@ -226,6 +227,8 @@ export const StyledImg = styled.img`
 // Card component
 export const StyledCardHeader = styled.div`
   padding-top: 5%;
+  display:flex;
+  flex-direction: column;
   @media screen and (max-width: 767px) {
   }
 
@@ -235,6 +238,9 @@ export const StyledCardHeader = styled.div`
     height: 262px;
     aling-items: center;
     margin: 0 auto;
+    justify-content:center;
+    gap:20px;
+    
   }
 
   // Labtop
