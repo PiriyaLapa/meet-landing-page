@@ -151,7 +151,7 @@ export const StyledHeader = styled.header`
 
 export const StyledGallery = styled.main`
   padding: 5%;
-  background-color: #c5ebaa; 
+  background-color: #c5ebaa;
 `;
 
 export const StyledFooter = styled.footer`
@@ -202,17 +202,15 @@ export const StyledImg = styled.img`
 
 // Card component
 export const StyledCardHeader = styled.div`
-  
   padding-top: 5%;
   @media screen and (max-width: 767px) {
-
   }
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    width:457px;    
-    height:262px;
-    aling-items:center;
+    width: 457px;
+    height: 262px;
+    aling-items: center;
     margin: 0 auto;
   }
 
@@ -293,5 +291,32 @@ export const ContentHeader = styled(TitleHeader)`
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
   }
+`;
 
+// Vector
+
+export const StyledVector1 = styled.div`
+  text-align:center;
+
+  @media screen and (max-width: 767px) {
+    //
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //
+  }
+  @media screen and (min-width: 1920px) {
+    //
+  }
 `;

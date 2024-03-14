@@ -1,9 +1,10 @@
 import { Component, ReactNode } from "react";
+import { StyledVector1 } from "../../styles/styles";
 
 export default class Vector1 extends Component {
   render(): ReactNode {
     return (
-      <div>
+      <StyledVector1>
         <svg
           width="56"
           height="140"
@@ -48,7 +49,7 @@ export default class Vector1 extends Component {
             </clipPath>
           </defs>
         </svg>
-      </div>
+      </StyledVector1>
     );
   }
 }
