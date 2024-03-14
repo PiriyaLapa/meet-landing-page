@@ -7,7 +7,6 @@ export const ContainerButton = styled.div`
   width: 100%;
   height: auto;
   display: flex;
-  padding: 5%;
   @media screen and (max-width: 767px) {
     flex-direction: column;
     align-items: center;
@@ -16,8 +15,8 @@ export const ContainerButton = styled.div`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    justify-content:center; 
-    gap:20px;
+    justify-content: center;
+    gap: 20px;
   }
 
   // Labtop
@@ -150,13 +149,13 @@ export const StyledLandingPage = styled.div`
 `;
 
 export const StyledHeader = styled.header`
+  margin: 0 auto;
   @media screen and (max-width: 767px) {
     text-align: center;
   }
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    background-color: #ffff;
   }
 
   // Labtop
@@ -175,7 +174,14 @@ export const StyledHeader = styled.header`
 
 export const StyledGallery = styled.main`
   padding: 5%;
-  background-color: #c5ebaa;
+  // background-color: #c5ebaa;
+  margin: 0 auto;
+`;
+
+export const ContainerGallery = styled.div`
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
 `;
 
 export const StyledFooter = styled.footer`
@@ -223,12 +229,39 @@ export const StyledImg = styled.img`
     //  background-color:#CADEFC;
   }
 `;
+export const StyledImgGallery = styled.img`
+  @media screen and (max-width: 767px) {
+    width: 151px;
+    height: 143px;
+    margin: 0 3px;
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //  background-color:#BDCDD6;
+    /* padding: 3% 5%; */
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //  background-color:#93BFCF;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //  background-color:#6096B4;
+  }
+  @media screen and (min-width: 1920px) {
+    //  background-color:#CADEFC;
+  }
+`;
 
 // Card component
 export const StyledCardHeader = styled.div`
   padding-top: 5%;
-  display:flex;
+  display: flex;
   flex-direction: column;
+
   @media screen and (max-width: 767px) {
   }
 
@@ -237,10 +270,9 @@ export const StyledCardHeader = styled.div`
     width: 457px;
     height: 262px;
     aling-items: center;
-    margin: 0 auto;
-    justify-content:center;
-    gap:20px;
-    
+    margin: 7% auto;
+    justify-content: center;
+    gap: 20px;
   }
 
   // Labtop
@@ -326,7 +358,6 @@ export const ContentHeader = styled(TitleHeader)`
 
 export const StyledVector1 = styled.div`
   text-align: center;
-
   @media screen and (max-width: 767px) {
     //
   }

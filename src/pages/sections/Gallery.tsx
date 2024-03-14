@@ -1,19 +1,20 @@
 import { Component, ReactNode } from "react";
-import { StyledGallery } from "../../styles/styles";
+import { ContainerGallery, StyledGallery } from "../../styles/styles";
 import { dataLandingPage } from "../../apis/Apis";
-import Image from "../../components/image/Image";
+import ImageGallery from "../../components/image/ImageGallery";
 
 export default class Gallery extends Component {
   renderGalleryPictures(): ReactNode {
     return dataLandingPage.galleryPic.map((picture) => (
-      <Image key={picture.id} urlImg={picture.urlImg} />
+      <ImageGallery key={picture.id} urlImg={picture.urlImg} />
     ));
   }
   render(): ReactNode {
     return (
       <StyledGallery>
-        Gallery section
+        <ContainerGallery>
         {this.renderGalleryPictures()}
+        </ContainerGallery>
       </StyledGallery>
     );
   }
