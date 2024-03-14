@@ -202,15 +202,18 @@ export const StyledImg = styled.img`
 
 // Card component
 export const StyledCardHeader = styled.div`
+  
   padding-top: 5%;
   @media screen and (max-width: 767px) {
-    //
+
   }
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    //  background-color:#BDCDD6;
-    /* padding: 3% 5%; */
+    width:457px;    
+    height:262px;
+    aling-items:center;
+    margin: 0 auto;
   }
 
   // Labtop
