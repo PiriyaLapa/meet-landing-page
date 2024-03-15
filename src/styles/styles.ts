@@ -198,6 +198,8 @@ export const StyledAuthor = styled.footer`
 export const StyledNavbar = styled.nav`
   padding: 3%;
   margin: 3% auto;
+  display:inline-block;
+height:57px;
 `;
 
 // components
@@ -263,6 +265,7 @@ export const StyledCardHeader = styled.div`
   flex-direction: column;
 
   @media screen and (max-width: 767px) {
+
   }
 
   // Tablet
