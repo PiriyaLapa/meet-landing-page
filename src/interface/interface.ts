@@ -19,7 +19,7 @@ export interface LandingPageData {
   galleryPic: GalleryPicture[];
   galleryCard: {
     smallTitle: string;
-    Title: string;
+    title: string;
    content: string;
   };
   footer: {

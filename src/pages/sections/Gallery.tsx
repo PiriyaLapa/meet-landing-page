@@ -2,6 +2,8 @@ import { Component, ReactNode } from "react";
 import { ContainerGallery, StyledGallery } from "../../styles/styles";
 import { dataLandingPage } from "../../apis/Apis";
 import ImageGallery from "../../components/image/ImageGallery";
+import CardGallery from "../../components/cards/CardGallery";
+import Vector1 from "../../components/vectors/Vector1";
 
 export default class Gallery extends Component {
   renderGalleryPictures(): ReactNode {
@@ -12,9 +14,9 @@ export default class Gallery extends Component {
   render(): ReactNode {
     return (
       <StyledGallery>
-        <ContainerGallery>
-        {this.renderGalleryPictures()}
-        </ContainerGallery>
+        <Vector1 />
+        <ContainerGallery>{this.renderGalleryPictures()}</ContainerGallery>
+        <CardGallery />
       </StyledGallery>
     );
   }

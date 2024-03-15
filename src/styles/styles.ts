@@ -176,6 +176,8 @@ export const StyledGallery = styled.main`
   padding: 5%;
   // background-color: #c5ebaa;
   margin: 0 auto;
+  display:grid;
+  gap:20px;
 `;
 
 export const ContainerGallery = styled.div`
@@ -235,7 +237,8 @@ export const StyledImgGallery = styled.img`
   @media screen and (max-width: 767px) {
     width: 151px;
     height: 143px;
-    margin: 0 3px;
+    margin: 2px 5px;
+    border-radius:10px;
   }
 
   // Tablet
@@ -357,8 +360,66 @@ export const ContentHeader = styled(TitleHeader)`
   }
 `;
 
-// Vector
+//  CardGallery
+export const StyleCardGallry = styled.div`
+  display:inline-block;
+  @media screen and (max-width: 767px) {
+  }
 
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //
+  }
+  @media screen and (min-width: 1920px) {
+    //
+  }
+
+`;
+
+export const  SmallTitleGalleryCard = styled.span`
+  font-family:'Red Hat Display';
+  font-style:normal;
+  font-weight: 900;
+  font-size:16px;
+  line-height:26px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#4D96A9;
+  display:block;
+  text-align:center;
+  
+  
+`;;
+export const  TitleGalleryCard = styled.span`
+  font-family:'Red Hat Display';
+  font-style:normal;
+  font-weight:900;
+  font-size:32px;
+  line-height:36px;
+  text-align:center;
+  color: #28283D;
+  display:block;
+`;
+export const  ContentGalleryCard = styled.span`
+  font-familiy:'Red Hat Display';
+  font-styled:normall;
+  font-weight:500;
+  font-size:16px;
+  line-height:26px;
+  display:block; text-align:center; color:#87879D;
+`;
+
+// Vector
 export const StyledVector1 = styled.div`
   text-align: center;
   @media screen and (max-width: 767px) {

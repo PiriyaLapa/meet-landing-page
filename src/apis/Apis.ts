@@ -31,7 +31,7 @@ export const dataLandingPage: LandingPageData = {
   ],
   galleryCard: {
     smallTitle: "Built for modern use",
-    Title: "Smarter meetings, all in one place",
+    title: "Smarter meetings, all in one place",
     content:
       "Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.",
   },
