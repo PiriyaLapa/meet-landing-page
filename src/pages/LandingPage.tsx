@@ -32,7 +32,7 @@ export default class LandingPage extends Component {
     window.removeEventListener("resize", this.updateWindowDimensions);
   }
   render(): ReactNode {
-    // const { windowWidth  } = this.state;
+    const { windowWidth  } = this.state;
     // const screenNow = detectScreenSize(windowWidth);
 
     return (
@@ -40,7 +40,7 @@ export default class LandingPage extends Component {
         <Navbar />
         <Header />
         <Gallery />
-        <Footer/>
+        <Footer windowWidth={windowWidth}/>
         {/* <ScreenSizeDetect screenNow={screenNow} {...this.state} />  */}
       </StyledLandingPage>
     );

@@ -39,3 +39,7 @@ export interface ScreenSizeDetectProps {
   windowWidth: number;
   windowHeight: number;
 }
+
+export interface FooterProps{
+  windowWidth:number;
+}

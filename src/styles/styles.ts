@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { StyledBtnProp } from "../interface/interface";
 import { BtnDownloadProps } from "../interface/interface";
+import mobileFooterImg from '../assets/mobile/image-footer.jpg';
+
+
 
 // Button
 export const ContainerButton = styled.div`
@@ -186,9 +189,13 @@ export const ContainerGallery = styled.div`
   text-align: center;
 `;
 
-export const StyledFooter = styled.footer`
+interface StyledFooterProps{
+    windowWidth : number;
+}
+export const StyledFooter = styled.footer<StyledFooterProps>`
   padding: 5%;
   background-color: #93bfcf;
+  background-image:${(props) => props.$backgroundImageUrl};
 `;
 
 export const StyledAuthor = styled.footer`
