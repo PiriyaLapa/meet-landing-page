@@ -178,12 +178,36 @@ export const StyledGallery = styled.main`
   margin: 0 auto;
   display: grid;
   gap: 20px;
+
+  @media screen and (max-width: 767px) {
+    //
+  }
+  
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //  background-color:#93BFCF;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //  background-color:#6096B4;
+  }
+  @media screen and (min-width: 1920px) {
+    //  background-color:#CADEFC;
+  }
 `;
 
 export const ContainerGallery = styled.div`
   margin: 0 auto;
   display: inline-block;
   text-align: center;
+
 `;
 
 export const StyledFooter = styled.footer<StyledFooterProps>`
@@ -428,6 +452,7 @@ export const TitleFooter = styled.span`
 
   @media screen and (max-width: 767px) {
     //
+    line-height:36px;
   }
 
   // Tablet
@@ -458,7 +483,7 @@ export const ContentFooter = styled.span`
   text-align: center;
 
   @media screen and (max-width: 767px) {
-    //
+    line-height:26px;
   }
 
   // Tablet
