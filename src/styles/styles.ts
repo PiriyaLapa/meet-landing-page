@@ -424,7 +424,7 @@ export const TitleFooter = styled.span`
   font-size: 32px;
   line-height: 26px;
   text-align: center;
-  padding-top:50px;
+  padding-top: 50px;
 
   @media screen and (max-width: 767px) {
     //
@@ -567,8 +567,8 @@ export const StyledVector1 = styled.div`
 
 export const StyledVector2 = styled.div`
   text-align: center;
-  position:relative;
-  top:45px;
+  position: relative;
+  top: 45px;
   @media screen and (max-width: 767px) {
     //
   }
