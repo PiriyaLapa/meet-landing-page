@@ -43,3 +43,6 @@ export interface ScreenSizeDetectProps {
 export interface FooterProps{
   windowWidth:number;
 }
+export interface StyledFooterProps {
+  $backgroundImageUrl: string;
+}

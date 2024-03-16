@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { StyledBtnProp } from "../interface/interface";
 import { BtnDownloadProps } from "../interface/interface";
+import { StyledFooterProps } from "../interface/interface";
 // Button
 export const ContainerButton = styled.div`
   width: 100%;
@@ -185,9 +186,6 @@ export const ContainerGallery = styled.div`
   text-align: center;
 `;
 
-interface StyledFooterProps {
-  $backgroundImageUrl: string;
-}
 export const StyledFooter = styled.footer<StyledFooterProps>`
   padding: 5%;
   background-color: #93bfcf;

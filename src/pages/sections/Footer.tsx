@@ -1,13 +1,12 @@
 import { Component, ReactNode } from "react";
 import { StyledFooter } from "../../styles/styles";
 import { FooterProps } from "../../interface/interface";
-import mobileFooterImg from '../../assets/mobile/image-footer.jpg';
-import tabletFooterImg from '../../assets/tablet/image-footer.jpg';
-import laptopFooterImg from '../../assets/desktop/image-footer.jpg';
-import desktopFooterImg from '../../assets/desktop/image-footer.jpg'
+import mobileFooterImg from "../../assets/mobile/image-footer.jpg";
+import tabletFooterImg from "../../assets/tablet/image-footer.jpg";
+import laptopFooterImg from "../../assets/desktop/image-footer.jpg";
+import desktopFooterImg from "../../assets/desktop/image-footer.jpg";
 
 export default class Footer extends Component<FooterProps> {
-
   getBackgroundImageUrl = (windowWidth: number): string => {
     if (windowWidth <= 767) {
       return mobileFooterImg;
@@ -24,6 +23,10 @@ export default class Footer extends Component<FooterProps> {
     const { windowWidth } = this.props;
     const backgroundImageurl = this.getBackgroundImageUrl(windowWidth);
 
-    return <StyledFooter $backgroundImageUrl={backgroundImageurl}></StyledFooter>;
+    return (
+      <StyledFooter $backgroundImageUrl={backgroundImageurl}>
+        
+      </StyledFooter>
+    );
   }
 }
