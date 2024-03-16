@@ -1,5 +1,5 @@
 import { Component, ReactNode } from "react";
-import { StyledAuthor } from "../styles/styles";
+import { StyledAuthor } from "../../styles/styles";
 
 export default class Author extends Component {
   render(): ReactNode {
