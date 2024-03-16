@@ -4,7 +4,7 @@ import { StyledLandingPage} from "../styles/styles";
 import Header from "./sections/Header";
 import Gallery from "./sections/Gallery";
 import Footer from "./sections/Footer";
-import Navbar from "../navbar/Navbar";
+import Navbar from "../components/navbar/Navbar";
 // import ScreenSizeDetect from "../components/ScreenSizeDetect";
 
 export default class LandingPage extends Component {
