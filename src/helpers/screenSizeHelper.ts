@@ -1,4 +1,4 @@
-const detectScreenSize = (windowWidth:number) => {
+const detectScreenSize = (windowWidth: number) => {
   return windowWidth <= 767
     ? "Mobile"
     : windowWidth <= 1023
