@@ -1,6 +1,6 @@
 import * as React from "react";
-import { StyledScreenSizeDetect } from "../styles/styles";
-import { ScreenSizeDetectProps } from "../interface/interface";
+import { StyledScreenSizeDetect } from "../../styles/styles";
+import { ScreenSizeDetectProps } from "../../interface/interface";
 
 export default class ScreenSizeDetect extends React.Component<ScreenSizeDetectProps> {
   public render() {
