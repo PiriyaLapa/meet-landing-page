@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import { StyledBtnProp } from "../interface/interface";
 import { BtnDownloadProps } from "../interface/interface";
-import mobileFooterImg from "../assets/mobile/image-footer.jpg";
-import tabletFooterImg from "../assets/tablet/image-footer.webp";
-import laptopFooterImg from "../assets/desktop/image-footer.jpg";
-import desktopFooterImg from "../assets/desktop/image-footer.jpg";
 // Button
 export const ContainerButton = styled.div`
   width: 100%;
@@ -190,12 +186,12 @@ export const ContainerGallery = styled.div`
 `;
 
 interface StyledFooterProps {
-  windowWidth: number;
+  $backgroundImageUrl: string;
 }
 export const StyledFooter = styled.footer<StyledFooterProps>`
   padding: 5%;
   background-color: #93bfcf;
-  background-image: url(${props => props.windowWidth <= 767 ? mobileFooterImg : props.windowWidth <= 1023 ? tabletFooterImg : props.windowWidth <= 1439 ? laptopFooterImg : desktopFooterImg});
+  background-image: url(${props => props.$backgroundImageUrl});
 `;
 
 export const StyledAuthor = styled.footer`
