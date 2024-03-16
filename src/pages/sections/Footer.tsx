@@ -6,6 +6,7 @@ import tabletFooterImg from "../../assets/tablet/image-footer.jpg";
 import laptopFooterImg from "../../assets/desktop/image-footer.jpg";
 import desktopFooterImg from "../../assets/desktop/image-footer.jpg";
 import CardFooter from "../../components/cards/CardFooter";
+import Vector2 from "../../components/vectors/Vector2";
 
 export default class Footer extends Component<FooterProps> {
   getBackgroundImageUrl = (windowWidth: number): string => {

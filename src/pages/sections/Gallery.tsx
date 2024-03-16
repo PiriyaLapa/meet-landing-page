@@ -4,6 +4,7 @@ import { dataLandingPage } from "../../apis/Apis";
 import ImageGallery from "../../components/image/ImageGallery";
 import CardGallery from "../../components/cards/CardGallery";
 import Vector1 from "../../components/vectors/Vector1";
+import Vector2 from "../../components/vectors/Vector2";
 
 export default class Gallery extends Component {
   renderGalleryPictures(): ReactNode {
@@ -17,6 +18,7 @@ export default class Gallery extends Component {
         <Vector1 />
         <ContainerGallery>{this.renderGalleryPictures()}</ContainerGallery>
         <CardGallery />
+        <Vector2 />
       </StyledGallery>
     );
   }

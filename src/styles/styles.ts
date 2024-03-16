@@ -196,7 +196,7 @@ export const StyledFooter = styled.footer<StyledFooterProps>`
     url(${(props) => props.$backgroundImageUrl});
   background-size: cover;
   background-position: top;
-  color:#FAFAFA;
+  color: #fafafa;
 `;
 
 export const StyledAuthor = styled.footer`
@@ -424,6 +424,7 @@ export const TitleFooter = styled.span`
   font-size: 32px;
   line-height: 26px;
   text-align: center;
+  padding-top:50px;
 
   @media screen and (max-width: 767px) {
     //
@@ -541,6 +542,33 @@ export const ContentGalleryCard = styled.span`
 // Vector
 export const StyledVector1 = styled.div`
   text-align: center;
+  @media screen and (max-width: 767px) {
+    //
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //
+  }
+  @media screen and (min-width: 1920px) {
+    //
+  }
+`;
+
+export const StyledVector2 = styled.div`
+  text-align: center;
+  position:relative;
+  top:45px;
   @media screen and (max-width: 767px) {
     //
   }
