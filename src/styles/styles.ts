@@ -93,7 +93,7 @@ export const StyledBtnDownload = styled.button<BtnDownloadProps>`
   }
 
   @media screen and (max-width: 767px) {
-    display: block;
+    align-items: center;
   }
 
   // Tablet
@@ -189,7 +189,14 @@ export const ContainerGallery = styled.div`
 export const StyledFooter = styled.footer<StyledFooterProps>`
   padding: 5%;
   background-color: #93bfcf;
-  background-image: url(${props => props.$backgroundImageUrl});
+  background-image: linear-gradient(
+      rgba(77, 150, 169, 0.8),
+      rgba(77, 150, 169, 0.8)
+    ),
+    url(${(props) => props.$backgroundImageUrl});
+  background-size: cover;
+  background-position: top;
+  color:#FAFAFA;
 `;
 
 export const StyledAuthor = styled.footer`
@@ -317,6 +324,34 @@ export const StyledCardHeader = styled.div`
     //  background-color:#CADEFC;
   }
 `;
+export const StyledCardFooter = styled.div`
+  display: grid;
+
+  @media screen and (max-width: 767px) {
+    gap: 20px;
+    :nth-child(3) {
+      margin: 0 auto;
+    }
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //  background-color:#93BFCF;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //  background-color:#6096B4;
+  }
+  @media screen and (min-width: 1920px) {
+    //  background-color:#CADEFC;
+  }
+`;
 
 export const TitleHeader = styled.span`
   font-family: "Red Hat Disply", sans-serif;
@@ -361,6 +396,68 @@ export const ContentHeader = styled(TitleHeader)`
   @media screen and (max-width: 767px) {
     grid-area: B;
     padding: 8% 7%;
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //  background-color:#BDCDD6;
+    /* padding: 3% 5%; */
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //  background-color:#93BFCF;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //  background-color:#6096B4;
+  }
+  @media screen and (min-width: 1920px) {
+    //  background-color:#CADEFC;
+  }
+`;
+export const TitleFooter = styled.span`
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 26px;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    //
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //  background-color:#BDCDD6;
+    /* padding: 3% 5%; */
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //  background-color:#93BFCF;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //  background-color:#6096B4;
+  }
+  @media screen and (min-width: 1920px) {
+    //  background-color:#CADEFC;
+  }
+`;
+export const ContentFooter = styled.span`
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    //
   }
 
   // Tablet
