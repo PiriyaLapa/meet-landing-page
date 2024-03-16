@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { StyledBtnProp } from "../interface/interface";
 import { BtnDownloadProps } from "../interface/interface";
-import mobileFooterImg from '../assets/mobile/image-footer.jpg';
-
-
-
+import mobileFooterImg from "../assets/mobile/image-footer.jpg";
+import tabletFooterImg from "../assets/tablet/image-footer.webp";
+import laptopFooterImg from "../assets/desktop/image-footer.jpg";
+import desktopFooterImg from "../assets/desktop/image-footer.jpg";
 // Button
 export const ContainerButton = styled.div`
   width: 100%;
@@ -179,8 +179,8 @@ export const StyledGallery = styled.main`
   padding: 5%;
   // background-color: #c5ebaa;
   margin: 0 auto;
-  display:grid;
-  gap:20px;
+  display: grid;
+  gap: 20px;
 `;
 
 export const ContainerGallery = styled.div`
@@ -189,13 +189,13 @@ export const ContainerGallery = styled.div`
   text-align: center;
 `;
 
-interface StyledFooterProps{
-    windowWidth : number;
+interface StyledFooterProps {
+  windowWidth: number;
 }
 export const StyledFooter = styled.footer<StyledFooterProps>`
   padding: 5%;
   background-color: #93bfcf;
-  background-image:${(props) => props.$backgroundImageUrl};
+  background-image: url(${props => props.windowWidth <= 767 ? mobileFooterImg : props.windowWidth <= 1023 ? tabletFooterImg : props.windowWidth <= 1439 ? laptopFooterImg : desktopFooterImg});
 `;
 
 export const StyledAuthor = styled.footer`
@@ -207,8 +207,8 @@ export const StyledAuthor = styled.footer`
 export const StyledNavbar = styled.nav`
   padding: 3%;
   margin: 3% auto;
-  display:inline-block;
-height:57px;
+  display: inline-block;
+  height: 57px;
 `;
 
 // components
@@ -245,7 +245,7 @@ export const StyledImgGallery = styled.img`
     width: 151px;
     height: 143px;
     margin: 2px 5px;
-    border-radius:10px;
+    border-radius: 10px;
   }
 
   // Tablet
@@ -267,8 +267,7 @@ export const StyledImgGallery = styled.img`
     //  background-color:#CADEFC;
   }
 `;
-export const StyledImgFooter= styled.img`
-
+export const StyledImgFooter = styled.img`
   @media screen and (max-width: 767px) {
   }
 
@@ -299,7 +298,6 @@ export const StyledCardHeader = styled.div`
   flex-direction: column;
 
   @media screen and (max-width: 767px) {
-
   }
 
   // Tablet
@@ -393,7 +391,7 @@ export const ContentHeader = styled(TitleHeader)`
 
 //  CardGallery
 export const StyleCardGallry = styled.div`
-  display:inline-block;
+  display: inline-block;
   @media screen and (max-width: 767px) {
   }
 
@@ -414,40 +412,39 @@ export const StyleCardGallry = styled.div`
   @media screen and (min-width: 1920px) {
     //
   }
-
 `;
 
-export const  SmallTitleGalleryCard = styled.span`
-  font-family:'Red Hat Display';
-  font-style:normal;
+export const SmallTitleGalleryCard = styled.span`
+  font-family: "Red Hat Display";
+  font-style: normal;
   font-weight: 900;
-  font-size:16px;
-  line-height:26px;
-  letter-spacing:4px;
-  text-transform:uppercase;
-  color:#4D96A9;
-  display:block;
-  text-align:center;
-  
-  
-`;;
-export const  TitleGalleryCard = styled.span`
-  font-family:'Red Hat Display';
-  font-style:normal;
-  font-weight:900;
-  font-size:32px;
-  line-height:36px;
-  text-align:center;
-  color: #28283D;
-  display:block;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #4d96a9;
+  display: block;
+  text-align: center;
 `;
-export const  ContentGalleryCard = styled.span`
-  font-family:'Red Hat Display';
-  font-style:normal;
-  font-weight:500;
-  font-size:16px;
-  line-height:26px;
-  display:block; text-align:center; color:#87879D;
+export const TitleGalleryCard = styled.span`
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: #28283d;
+  display: block;
+`;
+export const ContentGalleryCard = styled.span`
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  display: block;
+  text-align: center;
+  color: #87879d;
 `;
 
 // Vector
