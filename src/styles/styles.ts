@@ -435,8 +435,8 @@ export const  TitleGalleryCard = styled.span`
   display:block;
 `;
 export const  ContentGalleryCard = styled.span`
-  font-familiy:'Red Hat Display';
-  font-styled:normall;
+  font-family:'Red Hat Display';
+  font-style:normal;
   font-weight:500;
   font-size:16px;
   line-height:26px;
