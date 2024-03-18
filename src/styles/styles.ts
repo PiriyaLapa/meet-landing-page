@@ -202,10 +202,7 @@ export const StyledGallery = styled.main`
 `;
 
 export const ContainerGallery = styled.div`
-  margin: 0 auto;
-  /* display: inline-block; */
-  grid-auto-flow: row;
-  text-align: center;
+  text-align:center;
   @media screen and (max-width: 767px) {
     //
   }
@@ -213,7 +210,6 @@ export const ContainerGallery = styled.div`
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
   }
-
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
     //  background-color:#93BFCF;
@@ -258,7 +254,7 @@ export const StyledNavbar = styled.nav`
 
 export const StyledImg = styled.img`
   @media screen and (max-width: 767px) {
-    width: 102%;
+    width: 100%;
     margin: 7% auto;
     display: flex;
     justify-content: center;
@@ -288,7 +284,6 @@ export const StyledImgGallery = styled.img`
     width: 151px;
     height: 143px;
     margin: 2px 5px;
-    
   }
 
   // Tablet
@@ -296,7 +291,6 @@ export const StyledImgGallery = styled.img`
     width: 164px;
     height: 156px;
     margin: 0 5px;
-    
   }
 
   // Labtop
@@ -308,10 +302,9 @@ export const StyledImgGallery = styled.img`
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    width:255px;
-    height:242px;
+    width: 255px;
+    height: 242px;
     margin: 0 5px;
-
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
@@ -591,7 +584,8 @@ export const ContentGalleryCard = styled.span`
 
 // Vector
 export const StyledVector1 = styled.div`
-  text-align: center;
+    text-align:center;
+    margin: 0 auto;
   @media screen and (max-width: 767px) {
     //
   }
@@ -599,6 +593,7 @@ export const StyledVector1 = styled.div`
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     //
+    display:inline-block;  
   }
 
   // Labtop
