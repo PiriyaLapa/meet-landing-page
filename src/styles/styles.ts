@@ -255,11 +255,9 @@ export const StyledNavbar = styled.nav`
 // components
 
 export const StyledImg = styled.img`
+  width:100%;
   @media screen and (max-width: 767px) {
-    width: 100%;
-    margin: 7% auto;
-    display: flex;
-    justify-content: center;
+    //
   }
 
   // Tablet
@@ -624,6 +622,7 @@ export const StyledVector2 = styled.div`
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     //
+    display:inline-block;
   }
 
   // Labtop
