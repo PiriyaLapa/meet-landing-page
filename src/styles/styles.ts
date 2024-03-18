@@ -15,12 +15,16 @@ export const ContainerButton = styled.div`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     //
   }
 
@@ -172,6 +176,33 @@ export const StyledHeader = styled.header`
     //  background-color:#CADEFC;
   }
 `;
+export const StyledHeaderDesktop = styled.header`
+  margin: 0 auto;
+  display:flex;
+  justify-content:space-around;
+  gap:2%; 
+  @media screen and (max-width: 767px) {
+    //
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //  background-color:#93BFCF;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //  background-color:#6096B4;
+  }
+  @media screen and (min-width: 1920px) {
+    //  background-color:#CADEFC;
+  }
+`;
 
 export const StyledGallery = styled.main`
   padding: 5%;
@@ -210,10 +241,10 @@ export const ContainerGallery = styled.div`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    display:flex; 
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     margin: 0 auto;
-    gap:2%;
+    gap: 2%;
   }
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -358,7 +389,12 @@ export const StyledCardHeader = styled.div`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    //  background-color:#93BFCF;
+    width: 457px;
+    height: 262px;
+    aling-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
   }
 
   // Desktop
