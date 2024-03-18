@@ -182,11 +182,9 @@ export const StyledGallery = styled.main`
   @media screen and (max-width: 767px) {
     //
   }
-  
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    
   }
 
   // Labtop
@@ -205,9 +203,29 @@ export const StyledGallery = styled.main`
 
 export const ContainerGallery = styled.div`
   margin: 0 auto;
-  display: inline-block;
+  /* display: inline-block; */
+  grid-auto-flow: row;
   text-align: center;
+  @media screen and (max-width: 767px) {
+    //
+  }
 
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //  background-color:#93BFCF;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //  background-color:#6096B4;
+  }
+  @media screen and (min-width: 1920px) {
+    //  background-color:#CADEFC;
+  }
 `;
 
 export const StyledFooter = styled.footer<StyledFooterProps>`
@@ -248,8 +266,7 @@ export const StyledImg = styled.img`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    //  background-color:#BDCDD6;
-    /* padding: 3% 5%; */
+    //
   }
 
   // Labtop
@@ -266,27 +283,35 @@ export const StyledImg = styled.img`
   }
 `;
 export const StyledImgGallery = styled.img`
+  border-radius: 10px;
   @media screen and (max-width: 767px) {
     width: 151px;
     height: 143px;
     margin: 2px 5px;
-    border-radius: 10px;
+    
   }
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    //  background-color:#BDCDD6;
-    /* padding: 3% 5%; */
+    width: 164px;
+    height: 156px;
+    margin: 0 5px;
+    
   }
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    //  background-color:#93BFCF;
+    width: 164px;
+    height: 156px;
+    margin: 0 5px;
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    //  background-color:#6096B4;
+    width:255px;
+    height:242px;
+    margin: 0 5px;
+
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
@@ -452,7 +477,7 @@ export const TitleFooter = styled.span`
 
   @media screen and (max-width: 767px) {
     //
-    line-height:36px;
+    line-height: 36px;
   }
 
   // Tablet
@@ -483,7 +508,7 @@ export const ContentFooter = styled.span`
   text-align: center;
 
   @media screen and (max-width: 767px) {
-    line-height:26px;
+    line-height: 26px;
   }
 
   // Tablet
