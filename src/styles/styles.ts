@@ -43,7 +43,7 @@ export const StyledButtonWhat = styled.button<StyledBtnProp>`
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 26px;
   letter-spacing: 0.2px;
   @media screen and (max-width: 767px) {
@@ -80,14 +80,14 @@ export const StyledBtnDownload = styled.button<BtnDownloadProps>`
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 26px;
   letter-spacing: 0.2px;
   span {
     font-family: "Red Hat Display";
     font-style: normal;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 26px;
     color: ${(props) => (props.type === "Primary" ? "#8fe3f9" : "#D9B8FF")};
   }
@@ -133,7 +133,7 @@ export const StyledScreenSizeDetect = styled.div`
     font-style: normal;
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 1em;
     span {
       color: yellow;
     }
@@ -156,6 +156,7 @@ export const StyledHeader = styled.header`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //
   }
 
   // Labtop
@@ -202,13 +203,14 @@ export const StyledGallery = styled.main`
 `;
 
 export const ContainerGallery = styled.div`
-  text-align:center;
+  text-align: center;
   @media screen and (max-width: 767px) {
     //
   }
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin: 0 auto;
   }
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -290,21 +292,21 @@ export const StyledImgGallery = styled.img`
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     width: 164px;
     height: 156px;
-    margin: 0 5px;
+    /* margin: 0 5px; */
   }
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
     width: 164px;
     height: 156px;
-    margin: 0 5px;
+    /* margin: 0 5px; */
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
     width: 255px;
     height: 242px;
-    margin: 0 5px;
+    /* margin: 0 5px; */
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
@@ -348,7 +350,7 @@ export const StyledCardHeader = styled.div`
     width: 457px;
     height: 262px;
     aling-items: center;
-    margin: 7% auto;
+    margin: 0 auto;
     justify-content: center;
     gap: 20px;
   }
@@ -372,12 +374,13 @@ export const StyledCardFooter = styled.div`
   @media screen and (max-width: 767px) {
     gap: 20px;
     :nth-child(3) {
-      margin: 0 auto;
     }
   }
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin: 0 auto;
+    grid-gap: 20px;
     //
   }
 
@@ -399,7 +402,7 @@ export const TitleHeader = styled.span`
   font-family: "Red Hat Disply", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 2.5em;
   line-height: 44px;
   text-align: center;
   text-transform: capitalize;
@@ -431,7 +434,7 @@ export const TitleHeader = styled.span`
 
 export const ContentHeader = styled(TitleHeader)`
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 26px;
   color: #87879d;
 
@@ -463,7 +466,7 @@ export const TitleFooter = styled.span`
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 900;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 26px;
   text-align: center;
   padding-top: 50px;
@@ -496,7 +499,7 @@ export const ContentFooter = styled.span`
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 26px;
   text-align: center;
 
@@ -553,7 +556,7 @@ export const SmallTitleGalleryCard = styled.span`
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 26px;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -565,7 +568,7 @@ export const TitleGalleryCard = styled.span`
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 900;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 36px;
   text-align: center;
   color: #28283d;
@@ -575,7 +578,7 @@ export const ContentGalleryCard = styled.span`
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 26px;
   display: block;
   text-align: center;
@@ -584,8 +587,8 @@ export const ContentGalleryCard = styled.span`
 
 // Vector
 export const StyledVector1 = styled.div`
-    text-align:center;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
   @media screen and (max-width: 767px) {
     //
   }
@@ -593,7 +596,7 @@ export const StyledVector1 = styled.div`
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     //
-    display:inline-block;  
+    display: inline-block;
   }
 
   // Labtop
