@@ -30,7 +30,7 @@ export const ContainerButton = styled.div`
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    //
+    justify-content: center;
   }
   @media screen and (min-width: 1920px) {
     //
@@ -273,11 +273,20 @@ export const ContainerGallery = styled.div`
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
     //  background-color:#93BFCF;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    //  background-color:#6096B4;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row; //  background-color:#6096B4;
+    justify-content: center;
+    gap: 2%;
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
@@ -433,26 +442,24 @@ export const StyledCardFooter = styled.div`
   display: grid;
 
   @media screen and (max-width: 767px) {
-    gap: 20px;
-    :nth-child(3) {
-    }
+    grid-gap: 15%;
   }
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     margin: 0 auto;
-    grid-gap: 20px;
+    grid-gap: 15%;
     //
   }
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    //  background-color:#93BFCF;
+    grid-gap:15%;
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    //  background-color:#6096B4;
+    grid-gap:15%;
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
@@ -539,8 +546,6 @@ export const TitleFooter = styled.span`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    //  background-color:#BDCDD6;
-    /* padding: 3% 5%; */
   }
 
   // Labtop
@@ -589,7 +594,7 @@ export const ContentFooter = styled.span`
 `;
 
 //  CardGallery
-export const StyleCardGallry = styled.div`
+export const StyleCardGallery = styled.div`
   display: inline-block;
   @media screen and (max-width: 767px) {
   }

@@ -1,5 +1,6 @@
 import { Component, ReactNode } from "react";
 import {
+  ContainerButton,
   ContentFooter,
   StyledCardFooter,
   TitleFooter,
@@ -14,7 +15,9 @@ export default class CardFooter extends Component {
       <StyledCardFooter>
         <TitleFooter>{title}</TitleFooter>
         <ContentFooter>{content}</ContentFooter>
-        <ButtonDownload btnType="Secondary" />
+        <ContainerButton>
+          <ButtonDownload btnType="Secondary" />
+        </ContainerButton>
       </StyledCardFooter>
     );
   }
