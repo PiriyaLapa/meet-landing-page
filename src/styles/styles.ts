@@ -150,6 +150,7 @@ export const StyledLandingPage = styled.div`
   overflow: hidden;
   grid-template-rows: auto auto auto auto;
   min-height: 100vh;
+
 `;
 
 export const StyledHeader = styled.header`
@@ -258,8 +259,8 @@ export const StyledGallery = styled.main`
 
 export const ContainerGallery = styled.div`
   text-align: center;
-  max-width: 1110px;
-  max-height: 242px;
+  /* max-width: 1110px;
+  max-height: 242px; */
 
   @media screen and (max-width: 767px) {
     //
@@ -311,28 +312,6 @@ export const StyledFooter = styled.footer<StyledFooterProps>`
   background-size: cover;
   background-position: top;
   color: #fafafa;
-
-  @media screen and (max-width: 767px) {
-    //
-  }
-
-  // Tablet
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    //
-  }
-
-  // Labtop
-  @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    display:grid;
-  }
-
-  // Desktop
-  @media screen and (min-width: 1440px) {
-    //  background-color:#6096B4;
-  }
-  @media screen and (min-width: 1920px) {
-    //  background-color:#CADEFC;
-  }
 `;
 
 export const StyledAuthor = styled.footer`
@@ -468,31 +447,27 @@ export const StyledCardHeader = styled.div`
   }
 `;
 export const StyledCardFooter = styled.div`
-  display: grid;
+    display:grid;
+    /* flex-direction:column; */
   @media screen and (max-width: 767px) {
-    grid-gap: 15%;
+    grid-gap:15px;
   }
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     margin: 0 auto;
-    grid-gap: 10%;
-
+    grid-gap: 30px;
+    //
   }
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    grid-template-columns: repeat(3, 1fr);
-    justify-content:stretch center;
-    align-items:center;
-    grid-gap:5%;
-    align-self:center;
-    
+    grid-gap: 30px;
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    grid-gap: 25%;
+    grid-gap: 40px;;
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
@@ -571,19 +546,19 @@ export const TitleFooter = styled.span`
   line-height: 26px;
   text-align: center;
   padding-top: 50px;
+
   @media screen and (max-width: 767px) {
+    //
     line-height: 36px;
   }
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-
   }
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-      justify-content:start;
-    
+    //  background-color:#93BFCF;
   }
 
   // Desktop
@@ -685,16 +660,12 @@ export const TitleGalleryCard = styled.span`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    display: inline-block;
-    width: 50%;
-    margin: 0 auto;
+    //
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    display: inline-block;
-    width: 30%;
-    margin: 0 auto;
+    //
   }
   @media screen and (min-width: 1920px) {
     //
@@ -717,24 +688,19 @@ export const ContentGalleryCard = styled.span`
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     //
     display: inline-block;
-    width: 71%;
+    width: 50%;
     margin: 0 auto;
   }
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    display: inline-block;
-    width: 71%;
-    margin: 0 auto;
+    //
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    display: inline-block;
-    width: 71%;
-    margin: 0 auto;
-  }
     //
+  }
   @media screen and (min-width: 1920px) {
     //
   }
