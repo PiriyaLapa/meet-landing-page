@@ -311,6 +311,28 @@ export const StyledFooter = styled.footer<StyledFooterProps>`
   background-size: cover;
   background-position: top;
   color: #fafafa;
+
+  @media screen and (max-width: 767px) {
+    //
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    display:grid;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //  background-color:#6096B4;
+  }
+  @media screen and (min-width: 1920px) {
+    //  background-color:#CADEFC;
+  }
 `;
 
 export const StyledAuthor = styled.footer`
@@ -454,13 +476,18 @@ export const StyledCardFooter = styled.div`
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     margin: 0 auto;
-    grid-gap: 15%;
-    //
+    grid-gap: 10%;
+
   }
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    grid-gap: 15%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content:stretch center;
+    align-items:center;
+    grid-gap:5%;
+    align-self:center;
+    
   }
 
   // Desktop
@@ -544,19 +571,19 @@ export const TitleFooter = styled.span`
   line-height: 26px;
   text-align: center;
   padding-top: 50px;
-
   @media screen and (max-width: 767px) {
-    //
     line-height: 36px;
   }
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
+
   }
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    //  background-color:#93BFCF;
+      justify-content:start;
+    
   }
 
   // Desktop
