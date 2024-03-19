@@ -230,7 +230,6 @@ export const StyledHeaderNormalScreen = styled.header`
 
 export const StyledGallery = styled.main`
   padding: 5%;
-  // background-color: #c5ebaa;
   margin: 0 auto;
   display: grid;
   gap: 20px;
@@ -259,8 +258,8 @@ export const StyledGallery = styled.main`
 
 export const ContainerGallery = styled.div`
   text-align: center;
-  max-width:1110px;
-  max-height:242px;
+  max-width: 1110px;
+  max-height: 242px;
 
   @media screen and (max-width: 767px) {
     //
@@ -284,7 +283,7 @@ export const ContainerGallery = styled.div`
     justify-content: center;
     width: 696px;
     height: 156px;
-    gap:2%;
+    gap: 2%;
   }
 
   // Desktop
@@ -294,6 +293,7 @@ export const ContainerGallery = styled.div`
     flex-direction: row; //  background-color:#6096B4;
     justify-content: center;
     gap: 2%;
+    width: 100%;
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
@@ -447,7 +447,6 @@ export const StyledCardHeader = styled.div`
 `;
 export const StyledCardFooter = styled.div`
   display: grid;
-
   @media screen and (max-width: 767px) {
     grid-gap: 15%;
   }
@@ -466,7 +465,7 @@ export const StyledCardFooter = styled.div`
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    grid-gap: 15%;
+    grid-gap: 25%;
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
@@ -645,6 +644,34 @@ export const TitleGalleryCard = styled.span`
   text-align: center;
   color: #28283d;
   display: block;
+  @media screen and (max-width: 767px) {
+    //
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //
+    display: inline-block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    display: inline-block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    display: inline-block;
+    width: 30%;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1920px) {
+    //
+  }
 `;
 export const ContentGalleryCard = styled.span`
   font-family: "Red Hat Display";
@@ -655,6 +682,34 @@ export const ContentGalleryCard = styled.span`
   display: block;
   text-align: center;
   color: #87879d;
+  @media screen and (max-width: 767px) {
+    //
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //
+    display: inline-block;
+    width: 71%;
+    margin: 0 auto;
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    display: inline-block;
+    width: 71%;
+    margin: 0 auto;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    display: inline-block;
+    width: 71%;
+    margin: 0 auto;
+    //
+  @media screen and (min-width: 1920px) {
+    //
+  }
 `;
 
 // Vector
