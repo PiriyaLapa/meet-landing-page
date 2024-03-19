@@ -15,9 +15,9 @@ export const ContainerButton = styled.div`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
   }
 
   // Labtop
