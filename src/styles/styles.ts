@@ -171,16 +171,17 @@ export const StyledHeader = styled.header`
   // Desktop
   @media screen and (min-width: 1440px) {
     //  background-color:#6096B4;
+    /* margin:0 auto; */
+    
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
   }
 `;
 export const StyledHeaderDesktop = styled.header`
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  gap: 2%;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-auto-flow:column;
   @media screen and (max-width: 767px) {
     //
   }
@@ -198,6 +199,7 @@ export const StyledHeaderDesktop = styled.header`
   // Desktop
   @media screen and (min-width: 1440px) {
     //  background-color:#6096B4;
+    grid-gap:1vw;
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
@@ -322,15 +324,15 @@ export const StyledFooter = styled.footer<StyledFooterProps>`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    display: grid;
+    display:grid;
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    //  background-color:#6096B4;
+    display:grid;
   }
   @media screen and (min-width: 1920px) {
-    //  background-color:#CADEFC;
+    display:grid;
   }
 `;
 
@@ -483,16 +485,21 @@ export const StyledCardFooter = styled.div`
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
     grid-template-columns: repeat(3, 1fr);
     align-items:center; 
-  }
+  
+}
 
   // Desktop
   @media screen and (min-width: 1440px) {
+    display:grid;
     grid-template-columns: repeat(3, 1fr);
     align-items:center; 
     grid-gap: 3vh;
+    justify-content:space-between;
+    
   }
   @media screen and (min-width: 1920px) {
     grid-template-columns: repeat(3, 1fr);
+    display:flex;
     align-items:center; 
   }
 `;
@@ -569,6 +576,7 @@ export const TitleFooter = styled.span`
   line-height: 26px;
   text-align: center;
   padding-top: 50px;
+  
 
   @media screen and (max-width: 767px) {
     //
@@ -581,12 +589,16 @@ export const TitleFooter = styled.span`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    padding-top:0;
+    text-align:start;
     //  background-color:#93BFCF;
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
     //  background-color:#6096B4;
+    padding-top:0;
+  text-align:start;
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
@@ -606,18 +618,17 @@ export const ContentFooter = styled.span`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    //  background-color:#BDCDD6;
-    /* padding: 3% 5%; */
   }
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
     //  background-color:#93BFCF;
+    text-align:start;
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    //  background-color:#6096B4;
+    text-align:start;
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
