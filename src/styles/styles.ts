@@ -448,26 +448,25 @@ export const StyledCardHeader = styled.div`
 `;
 export const StyledCardFooter = styled.div`
     display:grid;
-    /* flex-direction:column; */
   @media screen and (max-width: 767px) {
-    grid-gap:15px;
+    grid-gap:3vh;
   }
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     margin: 0 auto;
-    grid-gap: 30px;
+    grid-gap: 3vh;
     //
   }
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    grid-gap: 30px;
+    grid-gap: 3vh;
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    grid-gap: 40px;;
+    grid-gap: 3vh;
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
