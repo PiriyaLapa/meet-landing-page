@@ -46,3 +46,7 @@ export interface FooterProps{
 export interface StyledFooterProps {
   $backgroundImageUrl: string;
 }
+
+export interface Headerprops {
+  isDesktop:boolean;
+}

@@ -178,9 +178,33 @@ export const StyledHeader = styled.header`
 `;
 export const StyledHeaderDesktop = styled.header`
   margin: 0 auto;
-  display:flex;
-  justify-content:space-around;
-  gap:2%; 
+  display: flex;
+  justify-content: space-around;
+  gap: 2%;
+  @media screen and (max-width: 767px) {
+    //
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    //  background-color:#93BFCF;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //  background-color:#6096B4;
+  }
+  @media screen and (min-width: 1920px) {
+    //  background-color:#CADEFC;
+  }
+`;
+export const StyledHeaderNormalScreen = styled.header`
+  margin: 0 auto;
   @media screen and (max-width: 767px) {
     //
   }

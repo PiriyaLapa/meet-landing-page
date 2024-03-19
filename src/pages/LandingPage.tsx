@@ -34,11 +34,12 @@ export default class LandingPage extends Component {
   render(): ReactNode {
     const { windowWidth  } = this.state;
     // const screenNow = detectScreenSize(windowWidth);
-
+    const isDesktop = windowWidth >= 1440;
+    
     return (
       <StyledLandingPage>
         <Navbar />
-        <Header />
+        <Header isDesktop={isDesktop}/>
         <Gallery />
         <Footer windowWidth={windowWidth}/>
         {/* <ScreenSizeDetect screenNow={screenNow} {...this.state} />  */}
