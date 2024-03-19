@@ -150,7 +150,6 @@ export const StyledLandingPage = styled.div`
   overflow: hidden;
   grid-template-rows: auto auto auto auto;
   min-height: 100vh;
-
 `;
 
 export const StyledHeader = styled.header`
@@ -312,6 +311,27 @@ export const StyledFooter = styled.footer<StyledFooterProps>`
   background-size: cover;
   background-position: top;
   color: #fafafa;
+  @media screen and (max-width: 767px) {
+    //
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    display: grid;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    //  background-color:#6096B4;
+  }
+  @media screen and (min-width: 1920px) {
+    //  background-color:#CADEFC;
+  }
 `;
 
 export const StyledAuthor = styled.footer`
@@ -447,9 +467,9 @@ export const StyledCardHeader = styled.div`
   }
 `;
 export const StyledCardFooter = styled.div`
-    display:grid;
+  display: grid;
   @media screen and (max-width: 767px) {
-    grid-gap:3vh;
+    grid-gap: 3vh;
   }
 
   // Tablet
@@ -461,15 +481,19 @@ export const StyledCardFooter = styled.div`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    grid-gap: 3vh;
+    grid-template-columns: repeat(3, 1fr);
+    align-items:center; 
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
+    grid-template-columns: repeat(3, 1fr);
+    align-items:center; 
     grid-gap: 3vh;
   }
   @media screen and (min-width: 1920px) {
-    //  background-color:#CADEFC;
+    grid-template-columns: repeat(3, 1fr);
+    align-items:center; 
   }
 `;
 
