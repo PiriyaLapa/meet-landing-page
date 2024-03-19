@@ -259,6 +259,9 @@ export const StyledGallery = styled.main`
 
 export const ContainerGallery = styled.div`
   text-align: center;
+  max-width:1110px;
+  max-height:242px;
+
   @media screen and (max-width: 767px) {
     //
   }
@@ -269,6 +272,8 @@ export const ContainerGallery = styled.div`
     flex-direction: row;
     margin: 0 auto;
     gap: 2%;
+    width: 696px;
+    height: 156px;
   }
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -277,7 +282,9 @@ export const ContainerGallery = styled.div`
     margin: 0 auto;
     flex-direction: row;
     justify-content: center;
-    gap: 2%;
+    width: 696px;
+    height: 156px;
+    gap:2%;
   }
 
   // Desktop
@@ -454,12 +461,12 @@ export const StyledCardFooter = styled.div`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    grid-gap:15%;
+    grid-gap: 15%;
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    grid-gap:15%;
+    grid-gap: 15%;
   }
   @media screen and (min-width: 1920px) {
     //  background-color:#CADEFC;
@@ -595,7 +602,6 @@ export const ContentFooter = styled.span`
 
 //  CardGallery
 export const StyleCardGallery = styled.div`
-  display: inline-block;
   @media screen and (max-width: 767px) {
   }
 
