@@ -706,6 +706,7 @@ export const ContentGalleryCard = styled.span`
     display: inline-block;
     width: 71%;
     margin: 0 auto;
+  }
     //
   @media screen and (min-width: 1920px) {
     //
