@@ -600,7 +600,7 @@ export const TitleFooter = styled.span`
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    line-height:26px;
+    line-height:36px;
     padding-top: 0;
     text-align: start;
   }
