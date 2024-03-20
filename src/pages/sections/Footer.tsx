@@ -6,6 +6,7 @@ import tabletFooterImg from "../../assets/tablet/image-footer.jpg";
 import laptopFooterImg from "../../assets/desktop/image-footer.jpg";
 import desktopFooterImg from "../../assets/desktop/image-footer.jpg";
 import CardFooter from "../../components/cards/CardFooter";
+import Author from "../../components/author/Author";
 
 export default class Footer extends Component<FooterProps> {
   getBackgroundImageUrl = (windowWidth: number): string => {
@@ -27,6 +28,7 @@ export default class Footer extends Component<FooterProps> {
     return (
       <StyledFooter $backgroundImageUrl={backgroundImageurl}>
           <CardFooter />        
+          <Author />
       </StyledFooter>
     );
   }
