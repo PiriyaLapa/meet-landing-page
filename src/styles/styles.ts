@@ -314,6 +314,8 @@ export const StyledFooter = styled.footer<StyledFooterProps>`
   background-size: cover;
   background-position: top;
   color: #fafafa;
+  display:grid;
+  grid-gap:2vh;
   @media screen and (max-width: 767px) {
     //
   }
@@ -341,6 +343,7 @@ export const StyledAuthor = styled.footer`
   * {
     margin-right: 2%;
   }
+  text-align:center;
 `;
 
 export const StyledNavbar = styled.nav`
